@@ -1,0 +1,999 @@
+:root {
+    --logo-color: #46B1DE;
+    --menu-color: #1B1D1F;
+    --but-col-primary: #46B1DE;
+    --but-col-secondary: #FFFFFF;
+    --box-background: #a1c7d4;
+    --box-title-color: #54A8D4;
+    --footer-logo-color: #0E2B49;
+}
+
+/* ....................................................................................... */
+/*..................................... MAIN CSS......................................... */
+/* ......................................................................................... */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* .................................FIRST SECTION......................................*/
+.first-screen {
+    background-image: url(./image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* padding-top: 60px; */
+    position: relative;
+    /* margin: 0 0 148px 0; */
+}
+/*................... CONTAINER.............................. */
+.container {
+     max-width: 1180px;
+     margin: 0 auto;
+    padding: 0 20px;
+}
+.wraper {
+   height: 665px; 
+}
+/*..................... HEADER.............................. */
+.nav__header {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+    padding-top: 60px;
+}
+/* ..............................Logo................................. */
+.header__logo {
+    display: flex;
+    align-items: flex-start; 
+}
+.logo__text {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 38px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    color: var(--logo-color);
+}
+.logo__text> span {
+    font-size: 26px;
+    font-style: normal;
+    line-height: 1.2;
+    text-transform: lowercase;
+}
+/* ......................Navigation ........................*/
+.menu {
+    display: flex;  
+}
+.nav__menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0;
+    gap: 40px;
+}
+.nav__box {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-end;
+}
+.nav__link {
+    text-decoration: none;
+    color: var(--menu-color);
+    /* text-align: center; */
+}
+/* .........................Phone................................................. */
+.phone__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5px;
+}
+.phone_image {
+    width: 14px;
+    height: 15px;
+}
+.phone__link {
+    color: var(--menu-color);
+    text-decoration: none;
+}
+/* ..........................HEAD ......................................................*/
+.head__one {
+    margin-bottom: 48px;
+    max-width: 455px;
+}
+.head__title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: var(--menu-color);
+    font-size: 40px;
+    line-height: 1.3em;
+    letter-spacing: 4px;
+}
+.title__span {
+    color: var(--logo-color);
+}
+.head__text {
+    color: var(--menu-color);
+    line-height: 1.4em;
+}
+/* BUTTONS */
+.buttons {
+    margin-bottom: 54px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 75px;
+}
+.call {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 180px;
+    text-decoration: none;
+    background-color: var(--but-col-primary);
+    color: var(--but-col-secondary);
+    border-radius: 8px;
+    border: 1px solid #DDE0DC;
+    box-shadow: 0px 2px 10px 0px #DDE0DC;
+    padding: 16px 66px;
+}
+.services {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    background-color: var(--but-col-secondary);
+    color: var(--but-col-primary);
+    border-radius: 8px;
+    border: 1px solid #DDE0DC;
+    background: #FFF;
+    box-shadow: 0px 2px 10px 0px #DDE0DC;
+    padding: 16px 45px;
+}
+
+/*........... IMAGE .......................*/
+.image {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+.img_lady {
+    max-width: 100%;
+}
+/* ...................SECTION.CARDS.......................... */
+.second-screen {
+    margin-bottom: 90px;
+}
+.card__block {
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1020px;
+    gap: 35px;
+    z-index: 1;
+}
+.cards {
+    margin-top: -70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 280px;
+    height: 120px;
+    background-color: var(--but-col-secondary);
+    border-radius: 8px;
+    border: 1px solid #D8E1E1;
+    box-shadow: 0px 4px 4px 0px 
+    rgba(0, 0, 0, 0.25);
+}
+.cards_item {
+    color: var(--but-col-primary);
+    font-size: 65px;    
+}
+.cards_text {
+    color: var(--menu-color);
+}
+/*...................(SECTION) WHY CHOOSE ME....................... */
+.choose__me {
+    margin-bottom: 80px;
+    position: relative;
+}
+/*....................... Why container......................... */
+.choose__me_container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+/*............. HEAD-2......................... */
+.choose__me_head {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*.................. Box ...............................*/
+.choose__me_box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    align-items: flex-start;
+    gap: 5px;
+    max-width: 1020px;
+    background-color: var(--box-background);
+    border-radius: 12px;
+    padding: 16px 10px 0 10px;
+}
+/*....................... Box content..................... */
+.box_box_content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--but-col-secondary);
+    color: var(--logo-color);
+    border-radius: 5px;
+    margin: 0 15px 15px 15px;
+    padding: 5%;
+    width: 300px;
+    height: 170px;
+}
+/*........... Feature.......... */
+.box_content_features {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+ .content_features_number {
+    font-size: 40px;
+    line-height: normal;
+ }
+/*..................(SECTION) WHAT SERVICES.......................... */
+ .what__provide {
+    margin-bottom: 90px;
+    position: relative;
+ }
+ .provide__tooth {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+ }
+ .services__box {
+    display: grid;
+    position: relative;
+ }
+ .services__box h3 {
+    color: var(--but-col-primary);
+    font-size: 20px;
+    line-height: 135%;
+    margin-bottom: 5px;
+ }
+.box__row_1,
+.box__row_2,
+.box__row_3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.box__row_1 {
+    padding: 10px 90px;
+}
+.box__row_2 {
+    padding: 10px 45px;
+}
+.box__row_3 {
+    padding: 10px 135px;
+}
+.box__collumn_right {
+    max-width: 320px;
+}
+.box__collumn_left {
+    display: grid;
+    text-align: right;
+    max-width: 320px;
+}
+/* ............(SECTION).ATENTION....................... */
+ .atention {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+ }
+ .atention_text {
+    color: var(--but-col-primary);
+    font-size: 20px;
+    line-height: 140%;
+ }
+
+/*...................(SECTION) MAKE AN APPOINTMENT....................... */
+ /* FORM */
+ .page__form {
+    margin-bottom: 90px;
+ }
+.page__form_container {
+    max-width: 845px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px 
+    rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+.form_border {
+    border: 1px solid #D9D9D9;
+    /* backdrop-filter: blur(2px); */
+    border-radius: 10px;
+    margin: 10px 9px 8px 15px;
+    text-align: center;
+}
+.form_box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* align-items: center; */
+    gap: 50px;
+    padding: 44px 18px 45px 18px;
+}
+.form_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 230px; */
+    border-radius: 8px;
+    background: rgba(217, 217, 217, 0.71);
+    font-size: 19px;
+}
+/* ...................TITLE......................... */
+.form_title {
+    text-transform: uppercase;
+    padding-top: 29px;
+}
+/*..............Input....................... */
+.input {
+    border: none;
+    background-color: transparent;
+    font-size: 19px;
+    height: 40px;
+}
+.label_user {
+    display: flex;
+    align-items: center;
+}
+.sign_up {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    background-color: var(--but-col-primary);
+    color: var(--but-col-secondary);
+    border-radius: 8px;
+    border: 1px solid #DDE0DC;
+    box-shadow: 0px 2px 10px 0px #DDE0DC;
+    padding: 16px 35px;
+}
+.sign_up_item {
+    color: var(--but-col-secondary);
+    text-decoration: none;
+}
+.vertical_slash {
+    display: block;
+    /* height: 30px; */
+    padding: 0 2px 0 2px;
+}
+/* ............SECTION with IMAGES............... */
+.image_section {
+    margin-bottom: 90px;
+}
+.image_container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+/*....................................(SECTION). FOOTER................................................. */
+.page__bottom {
+    position: relative;
+    height: 350px;
+    background: linear-gradient(to right, #A3C7D7,#0580AA)  ;
+}
+.footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+/* Left block */
+.footer__left {
+    display: grid;
+    grid-template-columns:  auto;
+    grid-template-rows: repeat(2, auto);
+}
+/* Footer logo */
+ .footer__logo {
+    display: flex;
+    align-items: flex-start; 
+ }
+.footer__logo_text {
+    display: flex;
+    flex-direction: column;
+    color: var(--footer-logo-color);
+    font-size: 38px;
+    line-height:  140%;
+    font-weight: bold;
+}
+.footer__logo_text span {
+    font-size: 26px;
+    line-height: 140%;
+}
+.footer__box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
+
+/* Footer navigation */
+.footer__nav {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: end;
+    gap: 20px;
+    color: var(--footer-logo-color);
+}
+.lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.lang_ua,
+.lang_en {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Working hours */
+.working__hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+/* Right block */
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--but-col-secondary);
+}
+/* Contacts */
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+.contact_img {
+    padding-right: 10px;
+}
+.list_items { 
+  font-size: 16px;
+}
+/* Copy */
+.copy_right {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--but-col-secondary);
+    padding-top: 10px;
+    font-size: small;
+}
+
+/* .....................MEDIA 992px........................ */
+@media screen and (min-width: 768px)and (max-width: 991px) {
+
+    /* ...............FIRST SCREEN.................. */
+    .first-screen>.container {
+        max-width: 950px;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .wraper {
+        height: 665px;
+    }
+
+    .container .nav__header {
+        align-items: start;
+        justify-content: space-evenly;
+        margin-bottom: 34px;
+        padding-top: 40px;
+    }
+
+    div .logo__text {
+        font-size: 24px;
+        line-height: 1;
+        justify-content: center;
+    }
+
+    div.logo__text>span {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+
+    .menu>.nav__menu {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        list-style-type: none;
+        gap: 15px;
+    }
+
+    .container .head__one {
+        margin-bottom: 48px;
+        max-width: 455px;
+    }
+
+    .container .head__title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: var(--menu-color);
+        font-size: 30px;
+        line-height: 1.3em;
+        letter-spacing: 4px
+    }
+
+    .head__one .head__text {
+        max-width: 345px;
+        color: var(--menu-color);
+        line-height: 1.4em;
+    }
+
+    .wraper>.buttons {
+        box-sizing: content-box;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .container .image {
+        position: absolute;
+    }
+
+    /* ..............SECOND SCREEN................ */
+    .second-screen>.card__block {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        gap: 20px;
+        margin: 0 25px 40px 25px;
+    }
+
+    /* ...............THIRTH SCREEN................ */
+    .choose__me>.choose__me_container {
+        margin: 80px 15px 0 15px;
+        max-width: 950px;
+    }
+
+    .choose__me_container>.choose__me_box {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .choose__me_box .box_box_content {
+        width: auto;
+    }
+
+    /* .....................fOURTH SCREEN.................... */
+    body .what__provide {
+        margin-bottom: 40px;
+    }
+
+    .container .choose__me_head {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container .provide__tooth {
+        opacity: 0.25;
+    }
+
+    .container .box__row_1 {
+        grid-template-columns: auto auto;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .container .box__row_2 {
+        grid-template-columns: auto auto;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .container .box__row_3 {
+        grid-template-columns: auto auto;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .container .box__collumn_right {
+        display: grid;
+        text-align: center;
+        min-width: 320px;
+    }
+
+    .container .box__collumn_left {
+        display: grid;
+        text-align: center;
+        min-width: 320px;
+    }
+
+    /* ...................FIFTH SECTIN................ */
+    .container>.atention {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 80px;
+    }
+
+    /* .............................(SECTION).FORM............................ */
+    body .page__form {
+        margin-bottom: 40px;
+        /* padding: 0 20px; */
+    }
+
+    .page__form .form_box {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        /* align-items: center; */
+        gap: 10px;
+        padding: 20px 15px 15px 15px;
+    }
+
+    .form_box .form_background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 57px; */
+        background: rgba(217, 217, 217, 0.71);
+        font-size: 19px;
+    }
+
+    /* .............................(SECTION).IMAGES.............................. */
+    .image_section .image_container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* .............................(SECTION).FOOTER................................ */
+    .container .page__bottom {
+        height: inherit;
+    }
+
+    .footer__logo .footer__logo_text {
+        color: var(--footer-logo-color);
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    div .footer__logo_text>span {
+        font-size: 18px;
+    }
+
+    .container .lang {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+/* ....................MEDIA 480px........................ */
+@media screen and (min-width: 375px)and (max-width: 479px) {
+
+    /*.......................FIRST SCREEN........................  */
+    .first-screen>.container {
+        position: relative;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .container>.wraper {
+        height: auto;
+    }
+
+    /* ...............HEADER................ */
+    .container .nav__header {
+        padding-top: 43px;
+        margin-bottom: 47px;
+        align-items: start;
+    }
+
+    div>.logo__image {
+        max-width: 34px;
+    }
+
+    div.logo__text {
+        font-size: 16px;
+        line-height: 1;
+        justify-content: center;
+    }
+
+    div.logo__text>span {
+        font-size: 12px;
+    }
+
+    .menu {
+        visibility: hidden;
+        max-width: 0;
+    }
+
+    header>.lang {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .container .head__one {
+        margin-bottom: 10px;
+    }
+
+    .container .head__title {
+        font-size: 26px;
+        text-align: center;
+    }
+    /*.......BUTTONS................. */
+    .wraper>.buttons {
+        box-sizing: content-box;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+        gap: initial;
+    }
+    .buttons>.call {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-decoration: none;
+        background-color: var(--but-col-primary);
+        color: var(--but-col-secondary);
+        border-radius: 8px;
+        border: 1px solid #DDE0DC;
+        box-shadow: 0px 2px 10px 0px #DDE0DC;
+        padding: 16px 66px;
+    }
+    .buttons>.services {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-decoration: none;
+        background-color: var(--but-col-secondary);
+        color: var(--but-col-primary);
+        border-radius: 8px;
+        border: 1px solid #DDE0DC;
+        background: #FFF;
+        box-shadow: 0px 2px 10px 0px #DDE0DC;
+        padding: 16px 45px;
+    }
+    /* ............IMAGE............ */
+    .first-screen .image {
+        position: initial;
+        margin-bottom: 10px;
+        max-width: 455px;
+    }
+    .container .img_lady {
+        max-width: 100%;
+    }
+    /* ..................SECOND SCREEN................. */
+    .second-screen>.card__block {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0;
+        margin-bottom: 40px;
+    }
+    .card__block .cards {
+        margin: 0 10px 15px 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: initial;
+        height: auto;
+        background-color: var(--but-col-secondary);
+        border-radius: 8px;
+        border: 1px solid #D8E1E1;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    /* .................THIRTH SCREEN.................... */
+    .choose__me>.choose__me_container {
+        margin: 0 10px 0 10px;
+    }
+
+    .choose__me_container>.choose__me_box {
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 20px;
+    }
+
+    .choose__me_box .box_box_content {
+        width: auto;
+        height: auto;
+    }
+
+    /* .....................fOURTH SCREEN.................... */
+    body .what__provide {
+        margin-bottom: 20px;
+    }
+
+    .container .choose__me_head {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container .provide__tooth {
+        opacity: 0.25;
+    }
+
+    .container .box__row_1 {
+        grid-template-columns: auto;
+        padding: 0 10px 10px 10px;
+        margin-bottom: 0px;
+        gap: 10px;
+    }
+
+    .container .box__row_2 {
+        grid-template-columns: auto;
+        padding: 0 10px 10px 10px;
+        margin-bottom: 0px;
+        gap: 10px;
+    }
+
+    .container .box__row_3 {
+        grid-template-columns: auto;
+        padding: 0 10px 10px 10px;
+        margin-bottom: 0px;
+        gap: 10px;
+    }
+
+    .container .box__collumn_right {
+        display: grid;
+        text-align: center;
+    }
+
+    .container .box__collumn_left {
+        display: grid;
+        text-align: center;
+    }
+
+    .container>.atention {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 20px;
+    }
+
+    .atention .atention_text {
+        font-size: inherit;
+    }
+
+    /* ............................(SECTION)..FORM............................ */
+    body .page__form {
+        margin-bottom: 40px;
+        /* padding: 0 10px; */
+    }
+
+    .page__form .form_box {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        /* align-items: center; */
+        gap: 20px;
+        padding: 20px 15px 25px 15px;
+    }
+
+    .form_box .form_background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 57px;
+        background: rgba(217, 217, 217, 0.71);
+        font-size: 19px;
+    }
+
+    /* .............................(SECTION).IMAGES.............................. */
+    .image_section .image_container {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* .............................(SECTION).FOOTER................................ */
+    body .page__bottom {
+        padding-bottom: 35px;
+        height: max-content;
+        margin: 0 auto;
+    }
+
+    .page__bottom .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .footer .footer__left {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 25px;
+    }
+
+    .footer__left .footer__logo {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__left .footer__box {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .footer__logo .footer__logo_text {
+        color: var(--footer-logo-color);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    div .footer__logo_text>span {
+        font-size: 12px;
+    }
+
+    .footer .footer__nav {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        justify-content: end;
+        gap: 20px;
+        color: var(--footer-logo-color);
+    }
+}
