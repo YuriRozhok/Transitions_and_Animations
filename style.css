@@ -164,21 +164,83 @@
     font-size: 40px;
     line-height: 1.3em;
     letter-spacing: 4px;
+    position: relative;
+    animation-name: head__title_moving_up;
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .title__span {
     color: var(--logo-color);
 }
+@keyframes head__title_moving_up {
+    0% {
+        top: 100px;
+        margin-bottom: 155px;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
 .head__text {
     color: var(--menu-color);
     line-height: 1.4em;
+    position: relative;
+    animation-name: head__text_moving_up;
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+@keyframes head__text_moving_up {
+    0% {
+        top: 100px;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 10px;
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+
 /* BUTTONS */
 .buttons {
     margin-bottom: 54px;
     display: flex;
-    /* justify-content: space-between; */
     gap: 75px;
+    position: relative;
+    animation-name: buttons_moving_up;
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+@keyframes buttons_moving_up {
+    0% {
+        top: 270px;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        /* height: 60px; */
+        opacity: 1;
+    }
+}
+
 .call {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 19px;
