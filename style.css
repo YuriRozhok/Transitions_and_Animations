@@ -192,8 +192,8 @@
     position: relative;
     animation-name: head__text_moving_up;
     opacity: 0;
-    animation-duration: 0.5s;
-    animation-delay: 0.3s;
+    animation-duration: 0.6s;
+    animation-delay: 0.4s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -211,7 +211,6 @@
         opacity: 1;
     }
 }
-
 /* BUTTONS */
 .buttons {
     margin-bottom: 54px;
@@ -220,8 +219,8 @@
     position: relative;
     animation-name: buttons_moving_up;
     opacity: 0;
-    animation-duration: 0.5s;
-    animation-delay: 0.3s;
+    animation-duration: 0.7s;
+    animation-delay: 0.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -229,12 +228,10 @@
 @keyframes buttons_moving_up {
     0% {
         top: 270px;
-        height: 0;
         opacity: 0;
     }
     100% {
         top: 0px;
-        /* height: 60px; */
         opacity: 1;
     }
 }
