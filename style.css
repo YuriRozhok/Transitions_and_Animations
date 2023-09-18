@@ -150,6 +150,11 @@
     top: -1px;
     left: 36px;
 }
+
+/* ....................Burger menu............ */
+.burger {
+    display: none;
+}
 /* ..........................HEAD ......................................................*/
 .head__one {
     margin-bottom: 48px;
@@ -1138,7 +1143,41 @@ text-decoration: underline;
         width: 0;
         display: none;
     }
+    /* ............................Burger menu................ */
+    .burger {
+        position: relative;
+        display: block;
+        width: 15px;
+        height: 8px;
+       left: 130%;
+    }
 
+     .burger span {
+        position: absolute;
+        background-color: var(--menu-color);
+        width: 15px;
+        height: 1px;
+        /* padding: 0 4px; */
+    }
+    .burger ::before {
+        content: "";
+        position: absolute;
+        background-color: var(--menu-color);
+        width: 15px;
+        height: 1px;
+        top: 3px;
+        left: 0;
+    }
+    .burger ::after {
+        content: "";
+        position: absolute;
+        background-color: var(--menu-color);
+        width: 15px;
+        height: 1px;
+        top: -3px;
+        left: 0;
+    }
+/* ........................Title..................... */
     .container .head__one {
         margin-bottom: 10px;
     }
